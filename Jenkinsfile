@@ -19,7 +19,7 @@ pipeline {
         
         stage("build"){
             when {
-                branch 'main'
+                branch 'dev'
             }
             
             steps{
@@ -29,7 +29,7 @@ pipeline {
 
         stage("Deploy"){
             when {
-                branch 'main'
+                branch 'dev'
             }
             
             steps{
